@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c156b"],{"462e":function(t,n,e){"use strict";e.r(n);var s=function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("router-link",{staticClass:"section-btn",attrs:{to:"signup"}},[t._v("Registrati")])},i=[],r={name:"registration-button"},a=r,c=e("2877"),o=Object(c["a"])(a,s,i,!1,null,"2e229d35",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0c156b.284abb09.js.map

@@ -1,0 +1,19 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: DB
+    #command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "my_db"
+      MYSQL_USER: "my_user"
+      MYSQL_PASSWORD: "mypsw"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      #dentro cartella "sql" c'è il dumb del db inizializzato e popolato
+    volumes:
+      - ./server/doc:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
